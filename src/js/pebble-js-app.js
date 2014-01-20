@@ -1,4 +1,4 @@
-var setPebbleToken = 'T7R3';
+var setPebbleToken = 'YWFN';
 
 function appMessageAck(e) {
     console.log("Options sent to Pebble successfully");
