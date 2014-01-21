@@ -429,7 +429,7 @@ void init(){
   bitmap_layer_set_bitmap(day_name_layer, day_name_image);
   layer_add_child(window_layer, bitmap_layer_get_layer(day_name_layer));
 */	
-	digital_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_DIGITAL_23));
+	digital_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_DIGITAL_22));
 	//digital_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_DIGITAL_32));
 	frame = (GRect){ .origin = { .x = 66, .y = 54}, .size = {65, 40}};
 	//frame = (GRect){ .origin = { .x = 75, .y = 54}, .size = {60, 22}};
