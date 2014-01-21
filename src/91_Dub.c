@@ -1,4 +1,5 @@
 #include "pebble.h"
+#include <ctype.h>
 
 static int blink = 0;
 static int zeroes = 0;
@@ -100,6 +101,16 @@ static char text_buffer[] = "24H";
 static char text_buffer0[] = "JAN";
 static char text_buffer1[] = "DEC";
 
+char *upcase(char *str) {
+    char *s = str;
+
+	while (*s){
+        *s++ = toupper((int)*s);
+    }
+
+    return str;
+}
+
 unsigned short get_display_hour(unsigned short hour){
   if(clock_is_24h_style()){
     return hour;
@@ -198,8 +209,10 @@ static void update_display(struct tm *current_time, TimeUnits units_changed){
 			
 			//strftime(text_buffer, sizeof(text_buffer), formating[zeroes], current_time);
 			strftime(text_buffer0, sizeof(text_buffer0), formating0, current_time);
+			upcase(text_buffer0);
 			text_layer_set_text(date_layer[0], text_buffer0);
 			strftime(text_buffer1, sizeof(text_buffer1), formating1, current_time);
+			upcase(text_buffer1);
 			text_layer_set_text(date_layer[1], text_buffer1);
 			/*
 			set_container_image(&date_digits_images[0], date_digits_layers[0], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_mday/10]);
@@ -352,7 +365,7 @@ void init(){
   layer_add_child(window_layer, bitmap_layer_get_layer(background_layer));
 
   meter_bar_image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_METER_BAR);
-  GRect frame = (GRect){ .origin = { .x = 40, .y = 67}, .size = meter_bar_image->bounds.size};
+  GRect frame = (GRect){ .origin = { .x = 38, .y = 67}, .size = meter_bar_image->bounds.size};
   meter_bar_layer = bitmap_layer_create(frame);
   bitmap_layer_set_bitmap(meter_bar_layer, meter_bar_image);
   layer_add_child(window_layer, bitmap_layer_get_layer(meter_bar_layer));
@@ -362,7 +375,7 @@ void init(){
   layer_add_child(bitmap_layer_get_layer(meter_bar_layer), bitmap_layer_get_layer(meter_bar_mask_layer));
 
   bt_image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_BT);
-  frame = (GRect){ .origin = { .x = 56, .y = 67}, .size = bt_image->bounds.size};
+  frame = (GRect){ .origin = { .x = 54, .y = 67}, .size = bt_image->bounds.size};
   bt_layer = bitmap_layer_create(frame);
   bitmap_layer_set_bitmap(bt_layer, bt_image);
   layer_add_child(window_layer, bitmap_layer_get_layer(bt_layer));
@@ -416,16 +429,16 @@ void init(){
   bitmap_layer_set_bitmap(day_name_layer, day_name_image);
   layer_add_child(window_layer, bitmap_layer_get_layer(day_name_layer));
 */	
-	digital_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_DIGITAL_22));
+	digital_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_DIGITAL_23));
 	//digital_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_DIGITAL_32));
-	frame = (GRect){ .origin = { .x = 71, .y = 54}, .size = {60, 40}};
+	frame = (GRect){ .origin = { .x = 66, .y = 54}, .size = {65, 40}};
 	//frame = (GRect){ .origin = { .x = 75, .y = 54}, .size = {60, 22}};
 	for(int i = 0; i < 2; i++){
 		date_layer[i] = text_layer_create(frame);
 		text_layer_set_background_color(date_layer[i], GColorClear);
 		text_layer_set_text_color(date_layer[i], GColorBlack);
 		text_layer_set_font(date_layer[i], digital_font);
-		text_layer_set_text(date_layer[i], "FRI");
+		text_layer_set_text(date_layer[i], "JAN");
 		layer_add_child(window_layer, text_layer_get_layer(date_layer[i]));
 	}
 	text_layer_set_text_alignment(date_layer[0], GTextAlignmentLeft);
