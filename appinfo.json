@@ -22,8 +22,8 @@
         "media": [
             {
                 "type": "font",
-                "name": "FONT_DIGITAL_22",
-                "file": "fonts/digital-7 (mono)_14.ttf"
+                "name": "FONT_DIGITAL_16",
+                "file": "fonts/pokus_16.ttf"
             },
             {
                 "type": "png",
