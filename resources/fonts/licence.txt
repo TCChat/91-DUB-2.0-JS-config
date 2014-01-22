@@ -1,10 +1,10 @@
-ï»¿FontStruct Non-Commercial Software End User License Agreement 1.0
+FontStruct Non-Commercial Software End User License Agreement 1.0
 
-This software end user license agreement (hereinafter â€œAgreementâ€) is made
+This software end user license agreement (hereinafter “Agreement”) is made
 between you or, if you represent a legal entity, that legal entity (hereinafter
-â€œYouâ€) and â€œTCChatâ€, the copyright holder and designer (hereinafter
-â€œFont Designerâ€) of the font software named â€œpokusâ€ (hereinafter â€œFont
-Softwareâ€).
+“You”) and “TCChat”, the copyright holder and designer (hereinafter
+“Font Designer”) of the font software named “pokus” (hereinafter “Font
+Software”).
 
 1. BINDING AGREEMENT
 This Agreement is a binding agreement between You and the Font Designer and
@@ -19,8 +19,8 @@ this Agreement.
 
 2.1 PERSONAL USE
 You may use the Fonts Software only for Your own Personal Purposes and for Your
-Work. For the purposes of this Agreement, â€œPersonal Purposesâ€ shall mean any
-private use of the Font Software by you. â€œWorkâ€ shall mean any work or
+Work. For the purposes of this Agreement, “Personal Purposes” shall mean any
+private use of the Font Software by you. “Work” shall mean any work or
 result created by You or on Your behalf with the Font Software. For the
 avoidance of doubt, the use for Personal Purposes does not allow any use of the
 Font Software and/or any Work for commercial purposes (see Section 2.2) and/or
@@ -67,11 +67,11 @@ the Font Software.
 3. ATTRIBUTION
 If You make Your Work publicly accessible in any form, You must keep intact all
 copyright notices for the Font Software and display, reasonable to the medium or
-means You are utilizing for Your Work, an attribution notice (hereinafter â€œThe
-Attribution Noticeâ€) comprising of:
+means You are utilizing for Your Work, an attribution notice (hereinafter “The
+Attribution Notice”) comprising of:
 
-the name of the Font Designer or pseudonym, if applicable (â€œTCChatâ€);
-the title of the Font Software (â€œpokusâ€); and
+the name of the Font Designer or pseudonym, if applicable (“TCChat”);
+the title of the Font Software (“pokus”); and
 to the extent reasonably practicable, the URI
 (http://fontstruct.com/fontstructions/show/935954) from where the Font was
 originally downloaded.
@@ -92,14 +92,14 @@ warranties of this Agreement.
 
 5. OWNERSHIP AND RIGHTS TO THE FONT SOFTWARE
 The Font Designer reserves all rights not expressly granted to You in this
-Agreement (hereinafter â€œReserved Rightsâ€). The Font Software is protected by
+Agreement (hereinafter “Reserved Rights”). The Font Software is protected by
 copyright and other intellectual property laws and treaties. You acknowledge
 that the Font Designer shall be the sole owner of the Font Software, of the
 copyright and all Reserved Rights of whatever kind and nature in the Font
 Software.
 
 6. WARRANTY
-The Font Software is made available â€œas isâ€ WITHOUT WARRANTY OF ANY KIND,
+The Font Software is made available “as is” WITHOUT WARRANTY OF ANY KIND,
 EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
 MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
 COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT.THE FONT DESIGNER DOES NOT AND
